@@ -155,7 +155,8 @@ public class JFrmPrincipal extends javax.swing.JFrame {
 
     private void jMnuVendedor_efb2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jMnuVendedor_efb2ActionPerformed
         // TODO add your handling code here:
-     
+        JDlgPesquisaVendedorNovo jDlgPesquisaVendedorNovo=new JDlgPesquisaVendedorNovo(null, true);
+        jDlgPesquisaVendedorNovo.setVisible(true);
     }//GEN-LAST:event_jMnuVendedor_efb2ActionPerformed
 
     /**
