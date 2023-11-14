@@ -150,6 +150,13 @@ public class JDlgPesquisProdutoNovo extends javax.swing.JDialog {
         // TODO add your handling code here:
         if (jTable1.getSelectedRow() == -1) {
             util.mensagem("Selecione uma linha Para alterar!");
+        } else {
+            JDlgProdutoIA jDlgProdutoNovo = new JDlgProdutoIA(null, true);
+            jDlgProdutoNovo.setTelaAnterior(this);
+            jDlgProdutoNovo.setTitle("Alterando");
+            jDlgProdutoNovo.Ativar(false);
+            jDlgProdutoNovo.beanView(pesquisarProduto_efb.getProduto(jTable1.getSelectedRow()));
+            jDlgProdutoNovo.setVisible(true);
         }
     }//GEN-LAST:event_jBtnAlterar_efbActionPerformed
 

@@ -133,6 +133,14 @@ public class JDlgPesquisaVendedorNovo extends javax.swing.JDialog {
         if (jTable1.getSelectedRow() == -1) {
             util.mensagem("Selcione uma linha antes");
         }
+         else {
+            JDlgVendedorIA jDlgVendedorNovo = new JDlgVendedorIA(null, true);
+            jDlgVendedorNovo.setTelaAnterior(this);
+            jDlgVendedorNovo.Ativar(false);
+            jDlgVendedorNovo.setTitle("Alterando");
+            jDlgVendedorNovo.beanView(pesquisarVendedor.getVendedor(jTable1.getSelectedRow()));
+            jDlgVendedorNovo.setVisible(true);
+        }
 
     }//GEN-LAST:event_jBtnAlterar_efbActionPerformed
 
